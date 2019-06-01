@@ -26,10 +26,19 @@ function imba_earth_spirit_stone_caller:OnUpgrade() AbilityChargeController:Abil
 function imba_earth_spirit_stone_caller:OnSpellStart()
 	local caster = self:GetCaster()
 	local pos = self:GetCursorPosition()
+	local pos1 =  caster:GetAbsOrigin() + caster:GetForwardVector() * -200
+	local pos2 = caster:GetAbsOrigin() + caster:GetRightVector() * 200
+	local pos3 = caster:GetAbsOrigin() + caster:GetRightVector() * -200
 	if self:GetCursorTarget() == caster then
 		pos = caster:GetAbsOrigin() + caster:GetForwardVector() * 100
+		pos1 =  caster:GetAbsOrigin() + caster:GetForwardVector() * -100
+		 pos2 = caster:GetAbsOrigin() + caster:GetRightVector() * 100
+		 pos3 = caster:GetAbsOrigin() + caster:GetRightVector() * -100
 	end
 	local stone = CreateUnitByName("npc_imba_earth_spirit_stone", pos, false, caster, caster, caster:GetTeamNumber())
+	local stone = CreateUnitByName("npc_dota_earth_spirit_stone", pos1, false, caster, caster, caster:GetTeamNumber())
+	local stone = CreateUnitByName("npc_dota_earth_spirit_stone", pos2, false, caster, caster, caster:GetTeamNumber())
+	local stone = CreateUnitByName("npc_dota_earth_spirit_stone", pos3, false, caster, caster, caster:GetTeamNumber())
 	stone:SetForwardVector(caster:GetForwardVector())
 	stone:AddNewModifier(caster, self, "modifier_imba_stone_remnant_status", {})
 	stone:AddNewModifier(caster, self, "modifier_kill", {duration = self:GetSpecialValueFor("duration")})
