@@ -6876,7 +6876,7 @@
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"1100"
+		"AbilityCastRange"				"2000"
 		"AbilityCastPoint"				"0.0"
 		"AbilityCastAnimation"			"ACT_INVALID"
 
@@ -6906,7 +6906,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"60.0"
+				"duration"				"45.0"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_ES_STONE_CALLER"
@@ -6953,12 +6953,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"240"	// NOTE: This radius must match the radius for geomagnetic grip
+				"radius"				"300"	// NOTE: This radius must match the radius for geomagnetic grip
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rock_search_aoe"				"200"
+				"rock_search_aoe"				"500"
 			}
 			"03"
 			{
@@ -6974,17 +6974,17 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"speed"					"1400"
+				"speed"					"2000"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"unit_distance"			"800.0"
+				"unit_distance"			"1000"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"rock_distance"			"2000.0"
+				"rock_distance"			"5000.0"
 			}
 			"08"
 			{
@@ -7035,12 +7035,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"150"
+				"radius"				"300"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"speed"					"1300"
+				"speed"					"1500"
 			}
 			"03"
 			{
@@ -7050,17 +7050,17 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rock_speed"			"2400"
+				"rock_speed"			"3000"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"rock_distance"			"2000.0"
+				"rock_distance"			"3000.0"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"delay"					"0.6"
+				"delay"					"0.0"
 			}
 			"07"
 			{
@@ -7071,7 +7071,7 @@
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"move_slow"				"80"
+				"move_slow"				"100"
 			}
 			"09"
 			{
@@ -7153,7 +7153,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"180"	// NOTE: This radius must match the radius for boulder smash
+				"radius"				"300"	// NOTE: This radius must match the radius for boulder smash
 			}
 			"02"
 			{
@@ -7173,7 +7173,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"speed"					"1200"
+				"speed"					"3000"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -7299,22 +7299,22 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_per_second"		"50 100 150"
+				"damage_per_second"		"100 150 200"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_duration"			"6.0"
+				"damage_duration"			"0.5"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rock_search_radius"			"400"
+				"rock_search_radius"			"1000"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rock_explosion_radius"			"600"
+				"rock_explosion_radius"			"1000"
 			}			
 			"06"
 			{
